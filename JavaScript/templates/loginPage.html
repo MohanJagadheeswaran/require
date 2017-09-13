@@ -1,0 +1,13 @@
+<div class="container">
+  <p class="page-header">Hello</p>
+  <form class="form-inline" action="index.html" method="post">
+    <div class="form-group">
+      <label for="name">Name </label>
+      <input type="text" name="name" value="" class="form-control" ng-model='myName'>
+      <input type="text" name="name" value="" class="form-control" ng-model='myPosition'>
+    </div>
+  </form><br>
+  <button type="button" name="button" ng-click='clearValue()'>Clear Value</button>
+  <p>{{isValid}}</p>
+  <p ng-transclude></p>
+</div>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+
+<head>
+  <meta charset="utf-8">
+  <title>Factory</title>
+  <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+</script>
+<body>
+  <script type="text/javascript" src="lib/require.js" data-main="../JavaScript/main.js">
+  </script>
+  <div class="" ng-controller='mainController'>
+    <main-directive my-position='position' my-name='{{name}}' my-clear='clearValue()'>
+      <p>{{output}}</p>
+      <p>Again</p>
+    </main-directive>
+    <p>{{name}}</p>
+    <p>{{position}}</p>
+    <my-component my-position='{{position}}'></my-component>
+  </div>
+</body>
+
+</html>
